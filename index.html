@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Unect Jr."> 
+		<meta name="description" content="O MapaEJ é um ponto de encontro virtual entre você, comerciante,
+    autônomo ou empreendedor e Empresas Juniores de Londrina e região.
+    Encontre soluções!">
+		<meta name="keywords" content="Empresa Junior, Unect, Fejepar, Brasil Junior, NEJ, Nej londrina, tech, juniores, solução, soluções, MapaEJ"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="/Assets/favicon.ico" type="imagem/png">
+    <title>MapaEJ</title>
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/92b73e7f59.js" crossorigin="anonymous"></script>
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-header">
+        <img src="./Assets/map.svg" alt="Mapa EJ logo">
+        <span class="logo">MapaEJ</span>
+      </nav>
+    </header>
+    <section class="landing">
+      <div class="container">
+        <h1>Empresários Juniores capazes de transformar o Brasil</h1>
+        <p>
+          O MapaEJ é um ponto de encontro virtual entre você, comerciante,
+          autônomo ou empreendedor e Empresas Juniores de Londrina e região.
+          Encontre soluções!
+        </p>
+        <a href="https://www.brasiljunior.org.br/conheca-o-mej"  target="_blank" class="mej-button">Saiba mais sobre o MEJ</a>
+      </div>
+    </section>
+    <section class="empresas">  
+        <div class="side-nav">
+          <h2>Empresas Juniores</h2>
+          <nav>
+            <a href="#agraria" class="side-nav-item">Agrária</a>
+            <a href="#engenharias" class="side-nav-item">Engenharias</a>
+            <a href="#negócios" class="side-nav-item">Negócios e Gestão</a>
+            <a href="#saude" class="side-nav-item">Saúde</a>
+            <a href="#socioambiental" class="side-nav-item">Socioambiental</a>
+            <a href="#tecnologia" class="side-nav-item">Tecnologia</a>
+          </nav>
+        </div>
+
+      <div class="empresas-lista">
+        <!-- Agrarias -->
+        <h3 id="agraria">Agrária</h3>
+        <div class="empresas-flex">
+          <!-- CatecZ -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/logo_catecz.png" alt="CatecZ logo"></div>
+                <div class="social">
+                  <a href="tel:+554399694-3807" class="icon"><i class="fas fa-phone-alt"></i> (43)99694-3807</a><br>
+                  <a href="mailto:consultoriacatecz@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/cateczjunior/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initcat" class="texto">
+                <h4>CatecZ <span>Zootecnia</span></h4>
+                <p>Manejo Nutricional(Formulação de ração, ...</p>
+                <button type="button" onclick="LerMais('pluscat', 'initcat')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluscat" class="card-ler-mais">
+              <h4>CatecZ <span>Zootecnia</span></h4>
+              <p>
+                <ol>
+                  <li>Manejo Nutricional</li>
+                  <li>Controle Zootécnico(Fichas, ID de Animais, Acompanhamento)</li>
+                  <li>Administração Rural(Custos de Produção, Depreciação, Financ. Rural)</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluscat', 'initcat')" class="ler-mais">Ler Menos</button>
+            </div>          
+          </div>
+
+          <!-- ConsoAgro -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/consoagro.verde.png" alt="CONSOAGRO logo"></div>
+                <div class="social">
+                  <a href="tel:+554399991-9290" class="icon"><i class="fas fa-phone-alt"></i> (43)99991-9290</a><br>
+                  <a href="mailto:consodirex@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/consoagro/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initcons" class="texto">
+                <h4>CONSOAGRO <span>Agronomia</span></h4>
+                <p>Controle de pragas e doenças, ...</p>
+                <button type="button" onclick="LerMais('pluscons', 'initcons')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluscons" class="card-ler-mais">
+              <h4>CONSOAGRO <span>Agronomia</span></h4>
+              <p>
+                <ol>
+                  <li>Controle de pragas e doenças</li>
+                  <li>Planejamento e Implantação de Culturas</li>
+                  <li>Recomendação de Adubação e Calagem</li>
+                  <li>Paisagismo</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluscons', 'initcons')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- Vet JR -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/logo_vetjr.jpeg" alt="Vet Jr. logo"></div>
+                <div class="social">
+                  <a href="tel:+554399179-8590" class="icon"><i class="fas fa-phone-alt"></i> (43)99179-8590</a><br>
+                  <a href="mailto:contato@vetjruel.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/vetjruel/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initvet" class="texto">
+                <h4>Vet Jr. <span>Veterinária</span></h4>
+                <p>Manejo sanitário, nutricional ...</p>
+                <button type="button" onclick="LerMais('plusvet', 'initvet')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plusvet" class="card-ler-mais">
+              <h4>Vet Jr. <span>Veterinária</span></h4>
+              <p>
+                <ol>
+                  <li>Manejo sanitário, nutricional e reprodutivo de ruminantes</li>
+                  <li>Implementação de ruminantes</li>
+                  <li>Treinamento na pecuária</li>
+                  <li>Diagnóstico de propriedade</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plusvet', 'initvet')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Engenharias -->
+        <h3 id="engenharias">Engenharias</h3>
+        <div class="empresas-flex">
+          <!-- 3E UEL -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container1"><img src="./Assets/logo_3e.jpeg" alt="3E UEL logo"></div>
+                <div class="social">
+                  <a href="tel:+554399998-8014" class="icon"><i class="fas fa-phone-alt"></i> (43)99998-8014</a><br>
+                  <a href="mailto:contato@3euel.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/3euel/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="init3" class="texto">
+                <h4>3E UEL <span>Eng. Elétrica</span></h4>
+                <p>Projeto de geração fotovoltaica, ...</p>
+                <button type="button" onclick="LerMais('plus3', 'init3')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plus3" class="card-ler-mais">
+              <h4>3E UEL <span>Eng. Elétrica</span></h4>
+              <p>
+                <ol>
+                  <li>Projeto de geração fotovoltaica</li>
+                  <li>Projeto elétrico residencial/comercial</li>
+                  <li>Laudo NR - 10</li>
+                  <li>Projeto de eficiência energética</li>
+                  <li>Prototipagem eletrônica</li>
+                  <li>Projeto luminotécnico</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plus3', 'init3')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- Aprimora -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container1"><img src="./Assets/logo_aprimora.jpg" alt="Aprimora logo"></div>
+                <div class="social">
+                  <a href="tel:+554398475-6594" class="icon"><i class="fas fa-phone-alt"></i> (43)98475-6594</a><br>
+                  <a href="mailto:comercial.epq@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/aprimora.ej/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initapri" class="texto">
+                <h4>Aprimora <span>Eng. de Produção</span></h4>
+                <p>Projeto de geração fotovoltaica, ...</p>
+                <button type="button" onclick="LerMais('plusapri', 'initapri')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plusapri" class="card-ler-mais">
+              <h4>Aprimora <span>Eng. de Produção</span></h4>
+              <p>
+                <ol>
+                  <li>Pesquisa de Mercado</li>
+                  <li>Gestão de Custos</li>
+                  <li>Cronoanálise</li>
+                  <li>Mapeamento de Processos</li>
+                  <li>Otimização de Processos</li>
+                  <li>Análise de Layout e Arranjo físico</li>
+                  <li>Planejamento e Controle de Produção</li>
+                  <li>Gestão de Estoque e Desperdicio</li>
+                  <li>Aplicação do 5S</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plusapri', 'initapri')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        
+          <!-- Bóson Consultoria -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/logo_boson.png" alt="Bóson Consultoria logo"></div>
+                <div class="social">
+                  <a href="tel:+554398424-5313" class="icon"><i class="fas fa-phone-alt"></i> (43)98424-5313</a><br>
+                  <a href="mailto:contatoboson@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/bosonconsultoria/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initbos" class="texto">
+                <h4>Bóson Consultoria <span>Eng. Química</span></h4>
+                <p>Captação da Água da Chuva, ...</p>
+                <button type="button" onclick="LerMais('plusbos', 'initbos')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plusbos" class="card-ler-mais">
+              <h4>Bóson Consultoria <span>Eng. Química</span></h4>
+              <p>
+                <ol>
+                  <li>Captação da Água da Chuva</li>
+                  <li>Plano de Gerenciamento de Resíduos Sólidos</li>
+                  <li>Plano de Gerenciamento de Resíduos de Serviço de Saúde </li>
+                  <li>Mapeamento de Processo </li>
+                  <li>Rotulagem</li>
+                  <li>Tempo de Prateleira</li>
+                  <li>Análise de Água</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plusbos', 'initbos')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        
+ 
+          <!-- Paracelso -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/logo_paracelso.jpeg" alt="Paracelso logo"></div>
+                <div class="social">
+                  <a href="tel:+551499865-2575" class="icon"><i class="fas fa-phone-alt"></i> (14)99865-2575</a><br>
+                  <a href="mailto:paracelsoassessoria@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/paracelsojr" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initpara" class="texto">
+                <h4>Paracelso <span>Eng. Química</span></h4>
+                <p>Análise Quimica, ...</p>
+                <button type="button" onclick="LerMais('pluspara', 'initpara')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluspara" class="card-ler-mais">
+              <h4>Paracelso <span>Eng. Química</span></h4>
+              <p>
+                <ol>
+                  <li>Análise Quimica, Tratamento de Efluentes e Gestão de Resíduos</li>
+                  <li>Otimização de Processos</li>
+                  <li>Dimensionamento de Equipamentos</li>
+                  <li>Desenvolvimento de Layout</li>
+                  <li>Estudo Legislativo do Produto</li>
+                  <li>Captação de Água</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluspara', 'initpara')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- SELECT -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/logo_select.jpeg" alt="SELECT logo"></div>
+                <div class="social">
+                  <a href="tel:+55433133-3926" class="icon"><i class="fas fa-phone-alt"></i>(43)3133-3926</a><br>
+                  <a href="mailto:contato@select.eng.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/select.eng/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initsel" class="texto">
+                <h4>SELECT <span>Eng. Elétrica</span></h4>
+                <p>Projetos Fotovoltaicos, ...</p>
+                <button type="button" onclick="LerMais('plussel', 'initsel')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plussel" class="card-ler-mais">
+              <h4>SELECT <span>Eng. Elétrica</span></h4>
+              <p>
+                <ol>
+                  <li>Projetos Fotovoltaicos</li>
+                  <li>Projetos Elétricos</li>
+                  <li>Prototipagem em Eletrônica</li>
+                  <li>Eficiencia Energética</li>
+                  <li>SPDA</li>
+                  <li>Correção Fator de Potência</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plussel', 'initsel')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- SmartMec -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container1"><img src="./Assets/smartmec_logo.png" alt="SmartMec logo"></div>
+                <div class="social">
+                  <a href="tel:+554399604-0447" class="icon"><i class="fas fa-phone-alt"></i> (43)99604-0447</a><br>
+                  <a href="mailto:smartmeccm@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/smartmecjr/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initsmar" class="texto">
+                <h4>SmartMec <span>Eng. Mecânica</span></h4>
+                <p>Projetos Mecânicos, Hidraulicos ...</p>
+                <button type="button" onclick="LerMais('plussmar', 'initsmar')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plussmar" class="card-ler-mais">
+              <h4>SmartMec <span>Eng. Mecânica</span></h4>
+              <p>
+                <ol>
+                  <li>Projetos Mecânicos, Hidráulicos e Pneumáticos</li>
+                  <li>Gerenciamento de Estoque</li>
+                  <li>Planej. De Manutenção</li>
+                  <li>Ferramenta 5S</li>
+                  <li>Refrigeração: Dimensionamento de Exaustores e Ares-Condicionados</li>
+                  <li>Segurança do Trabalho: Mapa de Risco e Adequação NR12</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plussmar', 'initsmar')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- Solucaut -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container1"><img src="./Assets/solucaut_logo.jpeg" alt="Solucaut logo"></div>
+                <div class="social">
+                  <a href="tel:+554399106-7991" class="icon"><i class="fas fa-phone-alt"></i> (43)99106-7991</a><br>
+                  <a href="mailto:contato@solucaut.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/solucaut_ej/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initsolu" class="texto">
+                <h4>Solucaut <span>Eng. Controle e Automação</span></h4>
+                <p> Consultoria de Eficiência de Processos ...</p>
+                <button type="button" onclick="LerMais('plussolu','initsolu')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plussolu" class="card-ler-mais">
+              <h4>Solucaut <span>Eng. Controle e Automação</span></h4>
+              <p>
+                <ol>
+                  <li>Curso de prototipação em PCB</li>
+                  <li>Consultoria em gestão de processos</li>
+                  <li>Consultoria em gestão de estoque</li>
+                  <li>Automação de maquinários e processos</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plussolu','initsolu')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+          <!-- TCP -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/tcp_logo_brancoback.png" alt="TCP logo"></div>
+                <div class="social">
+                  <a href="tel:+554399852-8887" class="icon"><i class="fas fa-phone-alt"></i>(43)99852-8887</a><br>
+                  <a href="mailto:comunicacao@tcpengenhariacivil.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/tcpengenharia/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="inittcp" class="texto">
+                <h4>TCP <span>Eng. Civil</span></h4>
+                <p> Projetos Arquitetônicos ...</p>
+                <button type="button" onclick="LerMais('plustcp','inittcp')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plustcp" class="card-ler-mais">
+              <h4>TCP <span>Eng. Civil</span></h4>
+              <p>
+                <ol>
+                  <li>Projetos Arquitetônicos</li>
+                  <li>Projeto de Ampliação e Reforma</li>
+                  <li>Projeto Hidrossanitário</li>
+                  <li>Projeto Elétrico</li>
+                  <li>Digitalização/Regularização</li>
+                  <li>Projeto Estrutural</li>
+                  <li>Projeto topográfico</li>
+                  <li>Projeto de Design de Interiores</li>
+                  <li>Projeto de Fachada</li>
+                  <li>Projeto de Paisagismo</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plustcp','inittcp')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>          
+
+
+        </div>
+
+        <!-- Negócios e Gestão -->
+        <h3 id="negócios">Negócios e Gestão</h3>
+        <div class="empresas-flex">
+         <!-- BUSINESS -->
+         <div class="empresa-card">
+          <div class="card-default">
+            <div class="imagens">
+              <div class="container"><img src="./Assets/logo_business.png" alt="BUSI logo"></div>
+              <div class="social">
+                <a href="#" class="icon"><i class="fas fa-phone-alt"></i> (xx) xxxx-xxxx</a><br>
+                <a href="mailto:contato@businessconsultoria.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                <a href="https://www.instagram.com/businessconsultoria/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+              </div>
+            </div>
+            <div id="initbus" class="texto">
+              <h4>BUSINESS <span>Administração</span></h4>
+              <p>Modelo de Negócio, ...</p>
+              <button type="button" onclick="LerMais('plusbus','initbus')" class="ler-mais">Ler Mais</button>
+            </div>
+          </div>
+          <div id="plusbus" class="card-ler-mais">
+            <h4>BUSINESS <span>Administração</span></h4>
+            <p>
+              <ol>
+                <li>Modelo de Negócio</li>
+                <li>Gestão Financeira</li>
+                <li>Gestão de Pessoas</li>
+                <li>Gestão de Processos</li>
+                <li>Marketing e Vendas</li>
+                <li>Inovação</li>
+              </ol>
+            </p>
+            <button type="button" onclick="LerMenos('plusbus','initbus')" class="ler-mais">Ler Menos</button>
+          </div>
+        </div>          
+
+        
+          <!-- Elo Consultoria -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/elo_black_logo.png" alt="Elo Consultoria logo"></div>
+                <div class="social">
+                  <a href="tel:+554399914-0962" class="icon"><i class="fas fa-phone-alt"></i> (43)99914-0962</a><br>
+                  <a href="mailto:contato@eloconsultoria-uel.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/eloconsultoria/" target="_blank" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initelo" class="texto">
+                <h4>Elo Consultoria <span>Psicologia</span></h4>
+                <p>Recrutalento e Seleção, ...</p>
+                <button type="button" onclick="LerMais('pluselo','initelo')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluselo" class="card-ler-mais">
+              <h4>Elo Consultoria <span>Psicologia</span></h4>
+              <p>
+                <ol>
+                  <li>Recrutalento e Seleção</li>
+                  <li>Treinamentos(Relac. Interpessoal, Gerenc. de Tempo, <br>Iniciática e ProAtividade, Comunicação Assertiva, Resol. de Conflitos, <br>Gestão de Pessoas, Currículos)
+                  </li>
+                  <li>Descrição de Cargos e Pesquisa de Clima</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluselo','initelo')"  class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        
+          <!-- LEX -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container2"><img src="./Assets/logo_lex.jpeg" alt="LEX logo"></div>
+                <div class="social">
+                  <a href="tel:+554398854-0746" class="icon"><i class="fas fa-phone-alt"></i> (43)98854-0746</a><br>
+                  <a href="mailto:presidencia@lexuel.com.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/lexempresajr/" target="_blank" class="icon"><i class="fab fa-instagram-square"> Instagram</i></a>
+                </div>
+              </div>
+              <div id="initlex" class="texto">
+                <h4>LEX <span>Direito</span></h4>
+                <p>Fundação da Empresa(Estatuto, ...</p>
+                <button type="button" onclick="LerMais('pluslex','initlex')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluslex" class="card-ler-mais">
+              <h4>LEX <span>Direito</span></h4>
+              <p>
+                <ol>
+                  <li>Fundação da Empresa</li>
+                  <li>Registros (Marca e Software)</li>
+                  <li>Contratos(de Parceria, de Prestação de Serviço, Trabalhista)</li>
+                  <li>Termos</li>
+                  <li>Opinião Legal</li>
+                  <li>Assessoria Jurídica</li>
+                  <li>Notificação Extrajudicial</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluslex','initlex')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        
+          <!-- Sapiencia -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container2"><img src="./Assets/sapiencia_logo.JPG" alt="Sapiencia logo"></div>
+                <div class="social">
+                  <a href="tel:+554399867-5086" class="icon"><i class="fas fa-phone-alt"></i> (43)99867-5086</a><br>
+                  <a href="mailto:sapienciaconsultoria@edu.unifil.br" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/sapienciaconsultoriaa" target="_blank" class="icon"><i class="fab fa-instagram-square"> Instagram</i></a>
+                </div>
+              </div>
+              <div id="initsap" class="texto">
+                <h4>Sapiencia <span>Psicologia</span></h4>
+                <p>Avaliação de Desempenho, ...</p>
+                <button type="button" onclick="LerMais('plussap','initsap')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plussap" class="card-ler-mais">
+              <h4>Sapiencia <span>Psicologia</span></h4>
+              <p>
+                <ol>
+                  <li>Avaliação de Desempenho</li>
+                  <li>Diagnóstico empresarial</li>
+                  <li>Mapeamento de processos</li>
+                  <li>Recrutamento e seleção</li>
+                  <li>Descrição de cargos</li>
+                  <li>Divulgação de vagas</li>
+                  <li>Projetos de qualidade de vida no trabalho</li>
+                  <li>Treinamentos comportamentais</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plussap','initsap')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saúde -->
+        <h3 id="saude">Saúde</h3>
+        <div class="empresas-flex">
+          <!-- Kinase -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container1"><img src="./Assets/kinase_logo.jpg" alt="Kinase logo"></div>
+                <div class="social">
+                  <a href="tel:+554399955-8447" class="icon"><i class="fas fa-phone-alt"></i> (43)99955-8447</a><br>
+                  <a href="mailto:kinaseconsultoria@gmail.com" class="icon"><i class="fas fa-envelope"></i>  E-mail</a><br>
+                  <a href="https://www.instagram.com/kinaseconsultoria" target="_blank" class="icon"><i class="fab fa-instagram-square"> Instagram</i></a>
+                </div>
+              </div>
+              <div id="initkinase" class="texto">
+                <h4>Kinase <span>Farmácia</span></h4>
+                <p> Consultoria em saúde (assist ...</p>
+                <button type="button" onclick="LerMais('pluskinase','initkinase')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="pluskinase" class="card-ler-mais">
+              <h4>Kinase <span>Farmácia</span></h4>
+              <p>
+                <ol>
+                  <li>Consultoria em saúde (assistência farmacêutica)</li>
+                  <li>Rotulagem nutricional</li>
+                  <li>Workshop saúde mental</li>
+                  <li>Programa de gerenciamento de resíduos de saúde (PGRSS)</li>
+                  <li>Manual de BPFM (Boas práticas de fabricação e manipulação)</li>
+                  <li>POPs (procedimento operacional padrão)</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('pluskinase','initkinase')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Socioambiental -->
+        <h3 id="socioambiental">Socioambiental</h3>
+        <div class="empresas-flex">
+          <!-- Tergeo -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/tergeo_logo.jpeg" alt="Tergeo logo"></div>
+                <div class="social">
+                  <a href="tel:+554399620-0948" class="icon"><i class="fas fa-phone-alt"></i> (43)99620-0948</a><br>
+                  <a href="mailto:contato@tergeo.jr.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/tergeojr/" target="_blank" class="icon"><i class="fab fa-instagram-square"> Instagram</i></a>
+                </div>
+              </div>
+              <div id="inittergeo" class="texto">
+                <h4>Tergeo <span>Geografia</span></h4>
+                <p>Geomarketing, Cadastro ...</p>
+                <button type="button" onclick="LerMais('plustergeo','inittergeo')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plustergeo" class="card-ler-mais">
+              <h4>Tergeo <span>Geografia</span></h4>
+              <p>
+                <ol>
+                  <li>Geomarketing</li>
+                  <li>Cadastro Ambiente Rural(CAR)</li>
+                  <li>Sensoriamento Remoto</li>
+                  <li>Geoprocessamento</li>
+                  <li>Educação Ambiental</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plustergeo','inittergeo')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+
+        
+          <!-- Gaia Jr -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div class="imagens">
+                <div class="container"><img src="./Assets/gaia_logo.jpeg" alt="Gaia Jr. logo"></div>
+                <div class="social">
+                  <a href="tel:+554399195-4545" class="icon"><i class="fas fa-phone-alt"></i> (43)99195-4545</a><br>
+                  <a href="mailto:gaiajunior.utfpr@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="#" class="icon"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+              </div>
+              <div id="initgaia" class="texto">
+                <h4>Gaia Jr. <span>Eng. Ambiental</span></h4>
+                <p>Licenciamento Ambiental, ...</p>
+                <button type="button" onclick="LerMais('plusgaia', 'initgaia')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plusgaia" class="card-ler-mais">
+              <h4>Gaia Jr. <span>Eng. Ambiental</span></h4>
+              <p>
+                <ol>
+                  <li>Licenciamento Ambiental</li>
+                  <li>Gestão Ambientalental</li>
+                  <li>Gerenciamento de Resíduos Sólidos</li>
+                  <li>Educação Ambiental(Palestras, Minicursos e Oficinas)</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plusgaia', 'initgaia')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tecnologia -->
+        <h3 id="tecnologia">Tecnologia</h3>
+        <div class="empresas-flex">
+          <!-- Unect -->
+          <div class="empresa-card">
+            <div class="card-default">
+              <div id="pict" class="imagens">
+                <div class="container1"><img src="./Assets/logo_unectblue.png" id="picture" alt="Unect logo"></div>
+                <div class="social">
+                  <a href="tel:+551498801-5854" class="icon"><i class="fas fa-phone-alt"></i> (14)98801-5854</a><br>
+                  <a href="mailto:unectjr@gmail.com" class="icon"><i class="fas fa-envelope"></i> E-mail</a><br>
+                  <a href="https://www.instagram.com/unectjr" target="_blank" class="icon"><i class="fab fa-instagram-square"> Instagram</i></a>
+                </div>
+              </div>
+              <div id="initunect" class="texto">
+                <h4>Unect Jr. <span>TI</span></h4>
+                <p>Criação e Desenvolvimento de Sites, ...</p>
+                <button type="button" onclick="LerMais('plusunect','initunect')" class="ler-mais">Ler Mais</button>
+              </div>
+            </div>
+            <div id="plusunect" class="card-ler-mais">
+              <h4>Unect Jr. <span>TI</span></h4>
+              <p>
+                <ol>
+                  <li>Criação e Desenvolvimento de Sites</li>
+                  <li>Aplicações WEB</li>
+                  <li>Aplicativos Mobile(Android e iOS)</li>
+                </ol>
+              </p>
+              <button type="button" onclick="LerMenos('plusunect','initunect')" class="ler-mais">Ler Menos</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container_footer">
+        <div class="footer_div">
+          <h2>Unect Jr.</h2>
+          <address>Rua dos Expedicionários, numero 568, sala Q-107 
+          Cornélio Procópio / PR, CEP 86300-000</address>
+          <a href="tel:+551498801-5854">14 98801-5854</a>
+        </div>
+
+        <div class="footer_div">
+          <h2>Links Úteis</h2>
+          <a href="https://www.brasiljunior.org.br/" target="_blank">Brasil Jr.</a>
+          <a href="https://www.instagram.com/nej.londrina/" target="_blank"><abbr title="Núcleo das Empresas Juniores de Londrina">NEJ Londrina</abbr></a>
+          <a href="https://www.linkedin.com/company/fejepar/" target="_blank">Fejepar</a>
+        </div>
+
+        <div class="footer_div div_icons">
+          <h2>Siga-nos</h2>
+          <a href="https://www.facebook.com/UnectJr" target="_blank" class="icons_footer"><i class="fab fa-facebook"></i>  Facebook</a>
+          <a href="https://www.instagram.com/unectjr/" target="_blank" class="icons_footer"><i class="fab fa-instagram-square"></i>  Instagram</a>
+          <a href="https://www.linkedin.com/company/unect-jr./" target="_blank" class="icons_footer"><i class="fab fa-linkedin"></i>  Linkedin</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sub_footer">
+      <div class="container_subfooter">
+        <p>&copy; Copyright MapaEJ 2020</p>
+        <p>Desenvolvido por Unect Jr.</p>
+      </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
